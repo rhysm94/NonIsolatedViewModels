@@ -9,11 +9,25 @@ import Testing
 @testable import NonIsolatedViewModels
 
 struct NonIsolatedViewModelsTests {
-
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
-        // Swift Testing Documentation
-        // https://developer.apple.com/documentation/testing
+  @Test func loadRhys() async throws {
+    let viewModel = ViewModel {
+      await Task.yield()
+      return Person(name: "Rhys", age: 31)
     }
 
+    await viewModel.didTapFetchPerson()
+
+    #expect(viewModel.person == Person(name: "Rhys", age: 31))
+  }
+
+  @Test func loadJoe() async throws {
+    let viewModel = ViewModel {
+      await Task.yield()
+      return Person(name: "Joe", age: 31)
+    }
+
+    await viewModel.didTapFetchPerson()
+
+    #expect(viewModel.person == Person(name: "Joe", age: 31))
+  }
 }

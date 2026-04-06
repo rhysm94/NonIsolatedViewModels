@@ -14,19 +14,11 @@
 			remoteGlobalIDString = 91D16F312F83F98A00BD8D2D;
 			remoteInfo = NonIsolatedViewModels;
 		};
-		91D16F4A2F83F98D00BD8D2D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 91D16F2A2F83F98A00BD8D2D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 91D16F312F83F98A00BD8D2D;
-			remoteInfo = NonIsolatedViewModels;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		91D16F322F83F98A00BD8D2D /* NonIsolatedViewModels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NonIsolatedViewModels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D16F3F2F83F98D00BD8D2D /* NonIsolatedViewModelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NonIsolatedViewModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		91D16F492F83F98D00BD8D2D /* NonIsolatedViewModelsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NonIsolatedViewModelsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -38,11 +30,6 @@
 		91D16F422F83F98D00BD8D2D /* NonIsolatedViewModelsTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = NonIsolatedViewModelsTests;
-			sourceTree = "<group>";
-		};
-		91D16F4C2F83F98D00BD8D2D /* NonIsolatedViewModelsUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = NonIsolatedViewModelsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -62,13 +49,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		91D16F462F83F98D00BD8D2D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,7 +57,6 @@
 			children = (
 				91D16F342F83F98A00BD8D2D /* NonIsolatedViewModels */,
 				91D16F422F83F98D00BD8D2D /* NonIsolatedViewModelsTests */,
-				91D16F4C2F83F98D00BD8D2D /* NonIsolatedViewModelsUITests */,
 				91D16F332F83F98A00BD8D2D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +66,6 @@
 			children = (
 				91D16F322F83F98A00BD8D2D /* NonIsolatedViewModels.app */,
 				91D16F3F2F83F98D00BD8D2D /* NonIsolatedViewModelsTests.xctest */,
-				91D16F492F83F98D00BD8D2D /* NonIsolatedViewModelsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,29 +118,6 @@
 			productReference = 91D16F3F2F83F98D00BD8D2D /* NonIsolatedViewModelsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		91D16F482F83F98D00BD8D2D /* NonIsolatedViewModelsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 91D16F592F83F98D00BD8D2D /* Build configuration list for PBXNativeTarget "NonIsolatedViewModelsUITests" */;
-			buildPhases = (
-				91D16F452F83F98D00BD8D2D /* Sources */,
-				91D16F462F83F98D00BD8D2D /* Frameworks */,
-				91D16F472F83F98D00BD8D2D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				91D16F4B2F83F98D00BD8D2D /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				91D16F4C2F83F98D00BD8D2D /* NonIsolatedViewModelsUITests */,
-			);
-			name = NonIsolatedViewModelsUITests;
-			packageProductDependencies = (
-			);
-			productName = NonIsolatedViewModelsUITests;
-			productReference = 91D16F492F83F98D00BD8D2D /* NonIsolatedViewModelsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -177,10 +132,6 @@
 						CreatedOnToolsVersion = 26.4;
 					};
 					91D16F3E2F83F98D00BD8D2D = {
-						CreatedOnToolsVersion = 26.4;
-						TestTargetID = 91D16F312F83F98A00BD8D2D;
-					};
-					91D16F482F83F98D00BD8D2D = {
 						CreatedOnToolsVersion = 26.4;
 						TestTargetID = 91D16F312F83F98A00BD8D2D;
 					};
@@ -202,7 +153,6 @@
 			targets = (
 				91D16F312F83F98A00BD8D2D /* NonIsolatedViewModels */,
 				91D16F3E2F83F98D00BD8D2D /* NonIsolatedViewModelsTests */,
-				91D16F482F83F98D00BD8D2D /* NonIsolatedViewModelsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,13 +166,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		91D16F3D2F83F98D00BD8D2D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		91D16F472F83F98D00BD8D2D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,13 +189,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		91D16F452F83F98D00BD8D2D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -260,11 +196,6 @@
 			isa = PBXTargetDependency;
 			target = 91D16F312F83F98A00BD8D2D /* NonIsolatedViewModels */;
 			targetProxy = 91D16F402F83F98D00BD8D2D /* PBXContainerItemProxy */;
-		};
-		91D16F4B2F83F98D00BD8D2D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 91D16F312F83F98A00BD8D2D /* NonIsolatedViewModels */;
-			targetProxy = 91D16F4A2F83F98D00BD8D2D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -414,10 +345,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -446,10 +378,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -470,7 +403,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NonIsolatedViewModels.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NonIsolatedViewModels";
 			};
@@ -492,49 +425,9 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NonIsolatedViewModels.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NonIsolatedViewModels";
-			};
-			name = Release;
-		};
-		91D16F5A2F83F98D00BD8D2D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RP3TV2HAFG;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.rhysmorgan.NonIsolatedViewModelsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NonIsolatedViewModels;
-			};
-			name = Debug;
-		};
-		91D16F5B2F83F98D00BD8D2D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RP3TV2HAFG;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.rhysmorgan.NonIsolatedViewModelsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NonIsolatedViewModels;
 			};
 			name = Release;
 		};
@@ -564,15 +457,6 @@
 			buildConfigurations = (
 				91D16F572F83F98D00BD8D2D /* Debug */,
 				91D16F582F83F98D00BD8D2D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		91D16F592F83F98D00BD8D2D /* Build configuration list for PBXNativeTarget "NonIsolatedViewModelsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				91D16F5A2F83F98D00BD8D2D /* Debug */,
-				91D16F5B2F83F98D00BD8D2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
