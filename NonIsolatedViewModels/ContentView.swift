@@ -7,35 +7,27 @@
 
 import SwiftUI
 
-nonisolated struct Person: Equatable {
-  var name: String
-  var age: Int
-}
-
 @Observable
+// Explicitly marking as nonisolated to prove the point!
 nonisolated final class ViewModel {
   var person: Person?
   var isLoading = false
-  let personLoader: () async -> Person
 
-  init(personLoader: @escaping @concurrent () async -> Person) {
+  let personLoader: PersonLoader
+
+  init(personLoader: PersonLoader) {
     self.personLoader = personLoader
   }
 
   func didTapFetchPerson() async {
     isLoading = true
     defer { isLoading = false }
-    self.person = await personLoader()
+    self.person = await personLoader.load()
   }
 }
 
 struct ContentView: View {
-  @State private var viewModel = ViewModel(
-    personLoader: {
-      try? await Task.sleep(for: .seconds(2))
-      return Person(name: "Rhys", age: 31)
-    }
-  )
+  let viewModel: ViewModel
 
   @State private var loadingID: UUID?
 
@@ -66,8 +58,4 @@ struct ContentView: View {
       }
     }
   }
-}
-
-#Preview {
-  ContentView()
 }

@@ -10,10 +10,12 @@ import Testing
 
 struct NonIsolatedViewModelsTests {
   @Test func loadRhys() async throws {
-    let viewModel = ViewModel {
-      await Task.yield()
-      return Person(name: "Rhys", age: 31)
-    }
+    let viewModel = ViewModel(
+      personLoader: PersonLoader {
+        await Task.yield()
+        return Person(name: "Rhys", age: 31)
+      }
+    )
 
     await viewModel.didTapFetchPerson()
 
@@ -21,10 +23,12 @@ struct NonIsolatedViewModelsTests {
   }
 
   @Test func loadJoe() async throws {
-    let viewModel = ViewModel {
-      await Task.yield()
-      return Person(name: "Joe", age: 31)
-    }
+    let viewModel = ViewModel(
+      personLoader: PersonLoader {
+        await Task.yield()
+        return Person(name: "Joe", age: 31)
+      }
+    )
 
     await viewModel.didTapFetchPerson()
 
